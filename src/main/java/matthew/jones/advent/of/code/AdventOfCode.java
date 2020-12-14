@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import matthew.jones.advent.of.code.days.DayManager;
 import matthew.jones.advent.of.code.days.day1.Day1;
 import matthew.jones.advent.of.code.days.day2.Day2;
+import matthew.jones.advent.of.code.days.day3.Day3;
 
 import java.io.IOException;
 import java.net.URL;
@@ -14,9 +15,10 @@ public class AdventOfCode {
 
     public static void main(String[] args) {
         DayManager dayManager = new DayManager();
-        log.info("Adding Day");
+
         dayManager.addDay(new Day1(getData("day1.txt")));
         dayManager.addDay(new Day2(getData("day2.txt")));
+        dayManager.addDay(new Day3(getData("day3.txt")));
 
         dayManager.run();
     }
