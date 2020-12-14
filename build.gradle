@@ -1,7 +1,9 @@
 plugins {
     id "application"
+    id "io.freefair.lombok" version "5.3.0"
 }
 apply plugin : "java"
+apply plugin: "io.freefair.lombok"
 
 group 'org.example'
 version '1.0-SNAPSHOT'
@@ -9,8 +11,9 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
-
 dependencies {
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
     implementation("com.google.guava:guava:30.0-jre")
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'

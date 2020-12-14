@@ -1,14 +1,13 @@
 package matthew.jones.advent.of.code.days.day2;
 
+import lombok.extern.slf4j.Slf4j;
 import matthew.jones.advent.of.code.days.AbstractDay;
 import matthew.jones.advent.of.code.util.StringUtils;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
+//https://adventofcode.com/2020/day/2
+@Slf4j
 public class Day2 extends AbstractDay {
 
-    public static final Logger LOGGER = Logger.getLogger(Day2.class.getName());
     public static final int RULE_DEFINITION = 0;
     public static final int PASSWORD = 1;
     public static final int RULE = 0;
@@ -29,8 +28,8 @@ public class Day2 extends AbstractDay {
 
     @Override
     public void run() {
-        LOGGER.log(Level.INFO, "Day2 - Number of Valid Passwords =" + checkPasswords());
-        LOGGER.log(Level.INFO, "Day2 - Number of Valid Passwords NEW POLICY =" + checkPasswordsNewPolicy());
+        log.info("Day2 - Number of Valid Passwords =" + checkPasswords());
+        log.info("Day2 - Number of Valid Passwords NEW POLICY =" + checkPasswordsNewPolicy());
     }
 
     public Integer checkPasswords() {
