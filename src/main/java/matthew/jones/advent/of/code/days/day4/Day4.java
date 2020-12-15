@@ -9,14 +9,7 @@ import matthew.jones.advent.of.code.util.StringUtils;
 import java.util.ArrayList;
 import java.util.Map;
 
-//byr (Birth Year)
-//iyr (Issue Year)
-//eyr (Expiration Year)
-//hgt (Height)
-//hcl (Hair Color)
-//ecl (Eye Color)
-//pid (Passport ID)
-//cid (Country ID)
+//https://adventofcode.com/2020/day/4
 @Slf4j
 public class Day4 extends AbstractDay {
     public static Map<String, AbstractKeyValue> validColumns = Map.of("byr", new BirthYear(),

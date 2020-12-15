@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import matthew.jones.advent.of.code.days.AbstractDay;
 import matthew.jones.advent.of.code.util.StringUtils;
 
+//https://adventofcode.com/2020/day/3
 @Slf4j
 public class Day3 extends AbstractDay {
 
