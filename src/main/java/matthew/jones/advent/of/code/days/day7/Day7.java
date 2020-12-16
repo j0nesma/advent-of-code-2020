@@ -33,7 +33,6 @@ public class Day7 extends AbstractDay {
 
     public int howManyBagsssss() {
         setup(getData());
-//        removeBagAndSmaller(MY_BAG);
         int count = 0;
         for (Map.Entry<String, Bag> entry : bagMap.entrySet()) {
             if (canContainMyBag(entry.getKey())) {
