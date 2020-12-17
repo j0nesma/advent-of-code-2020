@@ -26,7 +26,7 @@ public class Day7 extends AbstractDay {
 
     @Override
     public void run() {
-        log.info("Day7 - number of bags which can fit my bag = " + howManyBagsssss());
+        log.info("Day7 - number of bags which can fit my bag  = " + howManyBagsssss());
         log.info("Day7 - number of bags which can fit into my bag = " + howManyBagsssssPart2());
     }
 

@@ -10,6 +10,7 @@ import matthew.jones.advent.of.code.days.day4.Day4;
 import matthew.jones.advent.of.code.days.day5.Day5;
 import matthew.jones.advent.of.code.days.day6.Day6;
 import matthew.jones.advent.of.code.days.day7.Day7;
+import matthew.jones.advent.of.code.days.day8.Day8;
 
 import java.io.IOException;
 import java.net.URL;
@@ -27,6 +28,7 @@ public class AdventOfCode {
         dayManager.addDay(new Day5(getData("day5.txt")));
         dayManager.addDay(new Day6(getData("day6.txt")));
         dayManager.addDay(new Day7(getData("day7.txt")));
+        dayManager.addDay(new Day8(getData("day8.txt")));
 
         dayManager.run();
     }
